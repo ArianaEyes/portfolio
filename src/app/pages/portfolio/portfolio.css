@@ -1,0 +1,289 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 100%;
+    height: 6265px;
+    display: flex;
+    flex-wrap: wrap;
+    background: 
+  radial-gradient(ellipse 100vh 230vh at 70% 45%, #c9015149, transparent 100%),
+  radial-gradient(ellipse 100vh 250vh  at 40% 45%, #70f00036, transparent 100%),
+  radial-gradient(ellipse 100vh 180vh  at 60% 70%, #0138ee4c, transparent 100%),
+  #000000;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    width: 1428px;
+    height: 74px;
+    justify-content: space-between;
+    margin-top: 44px;
+    margin-right: 40px;
+}
+.menu a{
+    width: 260px;
+    height: 100%;
+    background-color: #5801EE;
+    color: white;
+    font-size: 36px;
+    font-family: 'Bahnschrift SemiBold', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 17px 4px rgba(0, 0, 0, 0.877);
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+.menu a:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    background-color: #7f01ee;
+}
+.presentacion{
+    width: 100%;
+    height: 1006px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20vh;
+    margin-left: 10vh;
+}
+.texto{
+    margin: 0 auto;
+    margin-top: 10vh;
+    width: 875px;
+    height: 440px;
+    display: flex;
+    color: white;
+    font-size: 36px;
+    flex-wrap: wrap;
+}
+.texto h1{
+    margin-right: 40vh;
+    font-weight: 900px;
+    letter-spacing: 5px;
+    font-size: 78px;
+    font-family: "Bebas Neue", sans-serif;
+}
+.texto h3{
+    width: 80%;
+    font-weight: normal;
+    text-align: center;
+    font-family: 'Bahnschrift SemiBold', sans-serif;
+}
+.texto b{
+    font-weight: 900;
+}
+.buttons{
+    width: 100%;
+    height: 84px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10vh;
+    justify-content: space-between;
+}
+.buttons button{
+    width: 317px;
+    height: 84px;
+    border-radius: 0px;
+    border: none;
+    font-size: 28px;
+    font-weight: 600;
+    box-shadow: 0px 17px 4px rgba(0, 0, 0, 0.762);
+    transition-duration: 0.3s;
+}
+.buttons button:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    
+}
+.download{
+    background-color: #E0125E; 
+    color: #73002E;
+}
+.download:hover{
+    background-color: rgb(153, 9, 76); 
+    color: #4b0118;
+}
+.github{
+    background-color: #70F000; 
+    color:#067106
+}
+.github:hover{
+    background-color: #15ae34; 
+    color:#045358
+}
+.photo{
+    width: 500px;
+    height: 500px;
+    margin-top: 10vh;
+    margin-right: 10vh;
+    border-radius: 100%;
+    background-color: #2D00B4;
+    overflow: hidden;  
+    
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.skills{
+    margin: 0 auto;
+    width: 1231px;
+    height: 1480px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Inter", "Segoe UI", sans-serif;
+    
+}
+.skills-text{
+    width: 688px;
+    height: 142px;
+    display: flex;
+    background-color: #1160D8;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-weight: 600;
+    box-shadow: 0px 17px 4px rgba(0, 0, 0, 0.762);
+    transition-duration: .3s;
+}
+.skills-text:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.cuadros{
+    width: 100%;
+    height: 1234px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 8vh;
+}
+.habilididad{
+    width: 585px;
+    height: 567px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #1160D8;
+    background: rgba(0, 0, 0, 0.16); /* transparencia */
+  backdrop-filter: blur(10px);          /* desenfoque */
+  -webkit-backdrop-filter: blur(10px);  /* soporte Safari */
+  border-radius: 22px;
+  border: 1px solid rgba(163, 163, 163, 0.148); 
+  box-shadow: 2px 20px 4px rgba(0, 0, 0, 0.762);  
+}
+.img{
+    width: 110px;
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.img img{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    transition-duration: .5s;
+}
+.img img:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.img h4{
+    margin: 0 auto;
+}
+.projects{
+    margin: 0 auto;
+    width: 1636px;
+    height: 1724px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.projects-text{
+    width: 688px;
+    height: 142px;
+    display: flex;
+    background-color: #D33800;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-weight: 600;
+    box-shadow: 0px 17px 4px rgba(0, 0, 0, 0.762);
+}
+.projects-text:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}.containers-projects{
+    width: 100%;
+    height: 421px;
+    backdrop-filter: blur(10px);          /* desenfoque */
+  -webkit-backdrop-filter: blur(10px);  /* soporte Safari */
+  border-radius: 22px;
+  border: 1px solid rgba(163, 163, 163, 0.148); 
+  box-shadow: 2px 20px 4px rgba(0, 0, 0, 0.762);  
+}
+.about-me{
+    width: 100%;
+    height: 842px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.about-text{
+    position: absolute;
+    width: 500px;
+    height: 142px;
+    display: flex;
+    background-color: #2e00d3;
+    color: white;
+    margin:0 auto;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    box-shadow: 0px 17px 4px rgba(0, 0, 0, 0.762);
+    transition-duration: .3s;
+    top: 545vh;
+    left: 138vh;
+}
+.about-text:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.aboutme-photo{
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    overflow: hidden;  
+}
+.aboutme-photo img{
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
+}
+.contact{
+    width: 100%;
+    height: 577px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    justify-content: center;
+
+}
+.up{
+    width: 10vh;
+    height: 10vh;
+    border-radius: 100%;
+    background-color: #5801EE;
+    transition-duration: 0.3s;
+}
+.up:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
