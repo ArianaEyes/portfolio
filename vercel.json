@@ -1,0 +1,8 @@
+{
+  "buildCommand": "ng build --configuration production",
+  "outputDirectory": "dist/portafolio",
+  "framework": "angular",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
