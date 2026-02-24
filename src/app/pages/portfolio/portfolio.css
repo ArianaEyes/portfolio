@@ -6,7 +6,7 @@
 
 .container-fluid{
     width: 100%;
-    height: 6800px;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     background: 
@@ -45,7 +45,6 @@
   transform: translateY(40px);
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
-
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
@@ -54,17 +53,14 @@
     display: flex;
     flex-wrap: wrap;
     width: 650px;
-    height: 58vh;
+    height: 65vh;
     justify-content: space-between;
     margin-left: auto;
     margin-top: 15vh;
     overflow: hidden;
     z-index: 100;
 }
-
 .button{
-  /* position:relative;
-  display:inline-block; */
   width: 750px;
   height: 120px;
   display: flex;
@@ -72,7 +68,6 @@
 
   transition-duration: 0.3s;
 }
-
 .button a{
   /* border-radius: 20px; */
   width: 650px;
@@ -123,7 +118,6 @@
     30% 100%
   );
 }
-
 .btn-3{
     clip-path: polygon(
     30% 0%,
@@ -150,10 +144,10 @@
 }
 .btn-5{
     clip-path: polygon(
-    14% 0%,
+    12.8% 0%,
     100% 0%,
     100% 100%,
-    14% 100%
+    12.8% 100%
   );
 }
 .btn-5 a{
@@ -162,15 +156,15 @@
 }
 .presentacion{
     width: 100%;
-    height: 1006px;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     z-index: 100;
   
 }
 .texto{
-    margin: auto;
-    margin-left: 40vh;
+    margin: 25vh auto;
+    margin-left: 10%;
     width: 920px;
     height: 440px;
     display: flex;
@@ -183,7 +177,10 @@
     font-weight: 900;
     letter-spacing: 5px;
     font-size: 100px;
-    font-family: "Jersey 10", sans-serif;
+}
+.presentacion .im{
+    margin-top: 5.5vh;
+    margin-left: 30vh;
 }
 .texto h3{
     width: 80%;
@@ -276,7 +273,6 @@ a{
     animation: bounce;
     z-index: 100;
 }
-
 .skills-text{
     width: 688px;
     height: 142px;
@@ -376,12 +372,19 @@ a{
 .projects-text:hover{
     transform: scale(1.1);
     transition: 0.3s;
-}
+} 
 .code{
     border: none;
     background-color: #2575fc;
     border-radius: 5px;
     padding: 1vh 3vh;
+    
+}
+.code a{
+    font-weight: 800;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 1.2rem;
+    color:#0b3681;
 }
 .go{
     border: none;
@@ -389,6 +392,13 @@ a{
     border-radius: 5px;
     padding: 1vh 3vh;
     margin-left: 5vh;
+    color:#7b7f17;
+}
+.go a{
+    font-weight: 800;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 1.2rem;
+    color:#7b7f17;
 }
 .containers-projects{
     width: 100%;
@@ -424,7 +434,8 @@ a{
 }
 .about-me{
     width: 100%;
-    height: 1042px;
+    height:auto;
+    margin-top: 12vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -445,6 +456,15 @@ a{
     transition-duration: .3s;
     font-family: "Barlow Semi Condensed", sans-serif;
     
+    
+}
+.about-me h4{
+    color: white;
+    font-weight: 300; 
+    letter-spacing: 2px; 
+    line-height: 40px; 
+    font-size: 36px; 
+    margin-bottom: 4vh;
 }
 .about-text:hover{
     transform: scale(1.1);
@@ -514,7 +534,6 @@ a{
   z-index: 1;
   opacity: 0.2;
 }
-
 .snow {
   position: absolute;
   top: -50px;
@@ -522,8 +541,55 @@ a{
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
-
 @keyframes fall {
   from { transform: translateY(0); }
   to   { transform: translateY(100vh); }
+}
+
+@media (min-width:1700px) and (max-width:1919px) {
+    .texto{
+        margin:20vh 0vh 0vh 6vh;
+    }
+    .menu{
+        height: 65vh;
+    }
+    .about-me h4{
+        font-size: 25px;
+    }
+}
+@media (min-width:1050px) and (max-width:1699px) {
+    .texto{
+        margin: 30vh auto;
+        height: auto;
+    }
+    .menu{
+        display: none;
+    }
+    .about-me h4{
+        font-size: 25px;
+    }
+}
+@media (min-width:312px) and (max-width:1049px){
+    .texto{
+        margin: 30vh auto;
+        height: auto;
+    }
+    .menu{
+        display: none;
+    }
+    .buttons{
+        justify-content: center;
+        width: 60%;
+        height: auto;
+        margin: 5vh auto;
+}
+    .buttons button{
+    width: 30vh;
+    height: 8vh;
+    margin: 2vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
 }
