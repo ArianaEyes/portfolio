@@ -25,6 +25,8 @@
     center;
 
   animation: radial 6s linear infinite;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 @keyframes radial {
   from {
@@ -172,15 +174,20 @@
     font-size: 36px;
     flex-wrap: wrap;
 }
+.title{
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+}
 .texto h1{
     margin-right: 30vh;
     font-weight: 900;
     letter-spacing: 5px;
     font-size: 100px;
 }
-.presentacion .im{
-    margin-top: 5.5vh;
-    margin-left: 30vh;
+.im {
+    margin-top: 6vh;
+    margin-left: 25%;
 }
 .texto h3{
     width: 80%;
@@ -263,8 +270,11 @@ a{
     height: 100%;
     object-fit: cover;
 }
+.btn-title{
+    font-size: 64px;
+}
 .skills{
-    margin: 0 auto;
+    margin: 10vh auto;
     width: 1231px;
     height: 1480px;
     display: flex;
@@ -290,6 +300,14 @@ a{
 .skills-text:hover{
     transform: scale(1.1);
     transition: 0.3s;
+}
+.title-skill{
+    width: 90%;
+    display: flex;
+    margin-left: 8vh; 
+    margin-top: 6vh; 
+    font-size: 48px;
+    color: white
 }
 .cuadros{
     width: 100%;
@@ -350,8 +368,8 @@ a{
 }
 .projects{
     margin: 0 auto;
-    width: 1636px;
-    height: 2324px;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     z-index: 100;
@@ -400,9 +418,16 @@ a{
     font-size: 1.2rem;
     color:#7b7f17;
 }
-.containers-projects{
+.botones{
     width: 100%;
-    height: 421px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 4vh;
+}
+.containers-projects{
+    width: 90%;
+    height: auto;
+    margin: 4vh auto ;
     display: flex;
     flex-wrap: wrap;
     backdrop-filter: blur(10px);          /* desenfoque */
@@ -418,18 +443,18 @@ a{
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 20vh;
-    width: 430px;
+    width: 30%;
     margin: 0 auto;
-    margin-left: 20vh;
+    margin-left: 10%;
     
 }
 .project-sentence{
     display: flex;
     flex-wrap: wrap;
-    width: 700px;
-    height: 200px;
+    width: 50%;
+    height: 50%;
     margin: 0 auto;
-    margin-top: 10vh;
+    margin-top: 5%;
     align-content: space-between;
 }
 .about-me{
@@ -458,10 +483,21 @@ a{
     
     
 }
+.about-container{
+    width: 100%; 
+    height: auto; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-evenly; 
+    margin-top: 15vh;
+}
+.history{
+    height: auto; 
+    width: 60%;
+}
 .about-me h4{
     color: white;
     font-weight: 300; 
-    letter-spacing: 2px; 
     line-height: 40px; 
     font-size: 36px; 
     margin-bottom: 4vh;
@@ -471,8 +507,8 @@ a{
     transition: 0.3s;
 }
 .aboutme-photo{
-    width: 500px;
-    height: 500px;
+    width: 50vh;
+    height: 50vh;
     border-radius: 100%;
     overflow: hidden;  
 }
@@ -491,6 +527,32 @@ a{
     justify-content: center;
 
 }
+.contactme{
+    font-size: 70px; 
+    width: 70%;
+    margin: 0 auto; 
+    letter-spacing: 4px;
+    color: #22669D; 
+    text-align: center
+}
+.cont-contact1{
+    width: 40%; 
+    margin-left: 12vw; 
+    font-family: 'Inter', 
+    sans-serif;
+}
+.cont-contact2{
+    width: 30%; 
+    font-family: 'Inter', sans-serif;
+}
+.title-contact{
+    font-size: 48px; 
+    color: white;
+}
+.subtitle-contact{
+    font-size: 48px; 
+    color: #C7CF54;
+}
 .up{
     width: 10vh;
     height: 10vh;
@@ -504,8 +566,8 @@ a{
 }
 .up-2{
     position: absolute;
-    left: 190vh;
-    top: 380vh;
+    left: 170vh;
+    top: 370vh;
     width: 10vh;
     height: 10vh;
     border-radius: 100%;
@@ -547,6 +609,12 @@ a{
 }
 
 @media (min-width:1700px) and (max-width:1919px) {
+        .title[_ngcontent-ng-c2281305362]{
+        width: 70%;
+        margin: auto;
+        margin-left: 15%;
+    }
+
     .texto{
         margin:20vh 0vh 0vh 6vh;
     }
@@ -556,22 +624,749 @@ a{
     .about-me h4{
         font-size: 25px;
     }
-}
-@media (min-width:1050px) and (max-width:1699px) {
-    .texto{
-        margin: 30vh auto;
-        height: auto;
+    .title{
+        width: 70%;
+        margin: auto;
+        margin-left: 10%;
     }
+}
+@media (min-width:1400px) and (max-width:1699px) {
     .menu{
         display: none;
     }
     .about-me h4{
         font-size: 25px;
     }
-}
-@media (min-width:312px) and (max-width:1049px){
+    .title{
+        width: 70%;
+        margin: auto;
+        margin-left: 22%;
+    }
     .texto{
-        margin: 30vh auto;
+    margin: 25vh auto;
+    margin-left: 10%;
+    width: 80%;
+    height: auto;
+    
+}
+    .texto h3{
+        margin-left: 10%;
+        font-size:25px;
+    }
+    .im {
+    margin-top: 6vh;
+    margin-left: 20%;
+}
+.aboutme-photo{
+    margin-top: 5vh;
+    width: 40vh;
+    height: 40vh;
+}
+.code{
+    border: none;
+    background-color: #2575fc;
+    border-radius: 5px;
+    padding: 2vh 3vh;
+    margin-top: 2vh;
+    
+}
+.code a{
+    font-weight: 800;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 1rem;
+    color:#0b3681;
+}
+.go{
+    border: none;
+    background-color: #DDE33F;
+    border-radius: 5px;
+    padding: 2vh 3vh;
+    margin-top: 2vh;
+}
+.go a{
+    font-size: 1rem;
+}
+.up-2{
+    position: absolute;
+    left: 140vh;
+    top: 376vh;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 100%;
+    background-color: #152055;
+    transition-duration: 0.3s;
+}
+.up-3{
+    position: absolute;
+    left: 140vh;
+    top: 210vh;
+    width: 10vh;
+    height: 10vh;
+    border-radius: 100%;
+    background-color: #dde33f5f;
+    transition-duration: 0.3s;
+}
+
+}
+
+@media (min-width:1050px) and (max-width:1399px) {
+    .menu{
+        display: none;
+    }
+    .about-me h4{
+        font-size: 25px;
+    }
+    .about-text{
+    width: 688px;
+    height: 142px;
+    
+    
+}
+    .title{
+        width: 70%;
+        margin: auto;
+        margin-left: 18%;
+    }
+    .texto{
+    margin: 25vh auto;
+    margin-left: 10%;
+    width: 80%;
+    height: auto;
+    
+}
+.texto h1{
+    margin-right:10%;
+
+    font-size: 80px;
+    margin-top: 2vh;
+}
+    .texto h3{
+        margin-left: 10%;
+        font-size:25px;
+    }
+    .im {
+    margin-top: 6.5vh;
+    margin-left: 20%;
+}
+about-text{
+    width: 40%;
+    height: 142px; 
+}
+.about-text{
+    width: 40%;
+    height:10%;
+    font-size: 25px;
+}
+.about-container{
+    width: 100%;
+    height: 80vh;
+}
+.history{
+    height: auto; 
+    width: 60%;
+    font-size: 15px;
+}
+.btn-title{
+    font-size: 40px;
+}
+.about-me h4{
+    font-weight: 600; 
+    font-size: 25px; 
+    margin-bottom: 0vh;
+}
+.aboutme-photo{
+    width: 23vh;
+    height: 40vh;
+    border-radius: 20px;
+}
+.skills-text{
+    width: 40%;
+    height:20%;
+    font-size: 25px;
+}
+
+.skills{
+    width: 100%;
+    height: auto; 
+}
+.title-skill{
+    width: 90%;
+    display: flex;
+    margin-left: 1vh; 
+    margin-top: 1vh; 
+    font-size: 20px;
+    color: white
+}
+.cuadros{
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.habilidad{
+    width: 40%;
+    height: 50%;
+    padding: 2vh;
+    margin: 2vh;
+}
+.img{
+    width: 100px;
+    margin-left:10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.img img{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    transition-duration: .5s;
+}
+.projects{
+    margin-top: 10vh;
+}
+.projects-text{
+    width: 40%;
+    height:7%;
+    font-size: 25px;
+}
+.code{
+    border: none;
+    background-color: #2575fc;
+    border-radius: 5px;
+    padding: 1vh 2.5vh;
+    margin-top: 2vh;
+    
+}
+.code a{
+    font-weight: 800;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 1rem;
+    color:#0b3681;
+}
+.go{
+    border: none;
+    background-color: #DDE33F;
+    border-radius: 5px;
+    padding: 1vh 2vh;
+    margin-top: 2vh;
+}
+.go a{
+    font-size: 1rem;
+}
+.botones{
+    height: 6vh;
+    margin-left: 1vh;
+}
+.containers-projects{
+    width: 90%;
+    height: 30vh;
+}
+.containers-projects img{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-top: 3vh;
+    width:250px;
+    height: 250px;
+
+    
+}
+.project-sentence{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 55%;
+    height: 50%;
+    margin: 0;
+    top: 13%;
+    left: 40%;
+}
+.project-sentence h3{
+    font-size: 20px;
+    margin: 0;
+}
+.contact{
+    justify-content: space-evenly;
+}
+.contactme{
+    font-size: 40px; 
+    width: 80%;
+    margin: 10vh auto; 
+    letter-spacing: 4px;
+    color: #22669D; 
+    text-align: center
+}
+.cont-contact1{
+    width: 40%; 
+    margin-left: 10vh; 
+    font-family: 'Inter', 
+    sans-serif;
+}
+.cont-contact2{
+    width: 40%; 
+    margin-left: 10vh; 
+    font-family: 'Inter', sans-serif;
+}
+.title-contact{
+    font-size: 30px;
+}
+.subtitle-contact{
+    font-size: 25px;
+}
+
+.up-2{
+    display: none;
+    
+}
+.up-3{
+    display: none;
+    
+}
+}
+@media (min-width:800px) and (max-width:1049px){
+    .menu{
+        display: none;
+    }
+    .buttons{
+        justify-content: center;
+        width: 60%;
+        height: auto;
+        margin: 5vh auto;
+    }
+    .buttons button{
+    width: 30vh;
+    height: 8vh;
+    margin: 2vh;
+    justify-content: center;
+    align-items: center;
+    
+    }
+    .title{
+        width: 75%;
+        margin: auto;
+        margin-left: 16%;
+    }
+    .texto{
+    margin: 25vh auto;
+    margin-left: 10%;
+    width: 80%;
+    height: auto;
+    
+}
+.texto h1{
+    margin-right:10%;
+
+    font-size: 70px;
+    margin-top: 2vh;
+}
+    .texto h3{
+        margin-left: 10%;
+        font-size:25px;
+    }
+    .im {
+    margin-top: 6vh;
+    margin-left: 20%;
+}
+.about-text{
+    width: 40%;
+    height: 142px; 
+}
+.about-text{
+    width: 50%;
+    height:10%;
+    font-size: 18px;
+}
+.about-container{
+    width: 100%;
+    height: 80vh;
+}
+.history{
+    height: auto; 
+    width: 60%;
+    font-size: 15px;
+}
+.btn-title{
+    font-size: 40px;
+}
+.about-me h4{
+    font-weight: 300; 
+    font-size: 20px; 
+    margin-bottom: 0vh;
+}
+.aboutme-photo{
+    width: 23vh;
+    height: 40vh;
+    border-radius: 20px;
+}
+.skills-text{
+    width: 50%;
+    height:15%;
+    font-size: 20px;
+}
+
+.skills{
+    width: 100%;
+    height: auto; 
+}
+.title-skill{
+    width: 90%;
+    display: flex;
+    margin-left: 1vh; 
+    margin-top: 1vh; 
+    font-size: 20px;
+    color: white
+}
+.cuadros{
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.habilidad{
+    width: 40%;
+    height: 50%;
+    padding: 2vh;
+    margin: 2vh;
+}
+.img{
+    width: 100px;
+    margin-left:10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.img img{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    transition-duration: .5s;
+}
+.projects{
+    margin-top: 10vh;
+}
+.projects-text{
+    width: 50%;
+    height:10%;
+    font-size: 18px;
+}
+.code{
+    border: none;
+    background-color: #2575fc;
+    border-radius: 5px;
+    padding: 1vh 2.5vh;
+    margin-top: 2vh;
+    
+}
+.code a{
+    font-weight: 800;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 1rem;
+    color:#0b3681;
+}
+.go{
+    border: none;
+    background-color: #DDE33F;
+    border-radius: 5px;
+    padding: 1vh 2vh;
+    margin-top: 2vh;
+}
+.go a{
+    font-size: 1rem;
+}
+.botones{
+    height: 6vh;
+    margin-left: 1vh;
+}
+.containers-projects{
+    width: 90%;
+    height: 30vh;
+}
+.containers-projects img{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-top: 3vh;
+    width:250px;
+    height: 250px;
+
+    
+}
+.project-sentence{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 55%;
+    height: 50%;
+    margin: 0;
+    top: 13%;
+    left: 40%;
+}
+.project-sentence h3{
+    font-size: 20px;
+    margin: 0;
+}
+.contact{
+    justify-content: space-evenly;
+}
+.contactme{
+    font-size: 40px; 
+    width: 80%;
+    margin: 10vh auto; 
+    letter-spacing: 4px;
+    color: #22669D; 
+    text-align: center
+}
+.cont-contact1{
+    width: 40%; 
+    margin-left: 10vh; 
+    font-family: 'Inter', 
+    sans-serif;
+}
+.cont-contact2{
+    width: 40%; 
+    margin-left: 10vh; 
+    font-family: 'Inter', sans-serif;
+}
+.title-contact{
+    font-size: 30px;
+}
+.subtitle-contact{
+    font-size: 25px;
+}
+
+.up-2{
+    display: none;
+    
+}
+.up-3{
+    display: none;
+    
+}
+}
+@media (min-width:651px) and (max-width:799px){
+    
+    .menu{
+        display: none;
+    }
+    .buttons{
+        justify-content: center;
+        width: 60%;
+        height: auto;
+        margin: 5vh auto;
+    }
+    .buttons button{
+    width: 25vh;
+    height: 7vh;
+    margin: 2vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    }
+    
+    .texto{
+    margin: 25vh auto;
+    margin-left: 10%;
+    width: 80%;
+    height: auto;
+    
+}
+.title{
+    width: 100%;
+    margin: 0 auto;
+    margin-left: 12%;
+    /* clave */
+}
+.texto h1{
+    margin-right:9%;
+    font-weight: 900;
+    letter-spacing: 5px;
+    font-size: 70px;
+    margin-top: 2vh;
+}
+    .texto h3{
+        margin-left: 10%;
+        font-size: 20px;
+    }
+    .im {
+    margin-top: 6vh;
+    margin-left: 15%;
+}
+.about-text{
+    width: 40%;
+    height: 142px; 
+}
+.about-text{
+    width: 50%;
+    height:10%;
+    font-size: 18px;
+}
+.about-container{
+    width: 100%;
+    height: 80vh;
+}
+.history{
+    height: auto; 
+    width: 60%;
+    font-size: 15px;
+}
+.btn-title{
+    font-size: 40px;
+}
+.about-me h4{
+    font-weight: 600; 
+    font-size: 20px; 
+    margin-bottom: 0vh;
+}
+.aboutme-photo{
+    width: 23vh;
+    height: 40vh;
+    border-radius: 20px;
+}
+.skills-text{
+    width: 50%;
+    height:15%;
+    font-size: 20px;
+}
+
+.skills{
+    width: 100%;
+    height: auto;
+}
+.title-skill{
+    width: 90%;
+    display: flex;
+    margin-left: 1vh; 
+    margin-top: 1vh; 
+    font-size: 20px;
+    color: white
+}
+.cuadros{
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.habilidad{
+    width: 30vh;
+    height: 30vh;
+    padding: 2vh;
+    margin: 2vh;
+}
+.img{
+    width: 100px;
+    margin-left:10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.img img{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    transition-duration: .5s;
+}
+.projects-text{
+    width: 50%;
+    height:10%;
+    font-size: 18px;
+}
+.code{
+    border: none;
+    background-color: #2575fc;
+    border-radius: 5px;
+    padding: 1vh 2.5vh;
+    margin-top: 2vh;
+    
+}
+.code a{
+    font-weight: 800;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 1rem;
+    color:#0b3681;
+}
+.go{
+    border: none;
+    background-color: #DDE33F;
+    border-radius: 5px;
+    padding: 1vh 2vh;
+    margin-top: 2vh;
+}
+.go a{
+    font-size: 1rem;
+}
+.botones{
+    height: 6vh;
+    margin-left: 1vh;
+}
+.containers-projects{
+    width: 90%;
+    height: auto;
+}
+.containers-projects img{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-top: 3vh;
+    width:150px;
+    height: 150px;
+
+    
+}
+.project-sentence{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 55%;
+    height: 50%;
+    margin: 0;
+    top: 10%;
+    left: 40%;
+}
+.project-sentence h3{
+    font-size: 14px;
+    margin: 0;
+}
+.contact{
+    justify-content: space-evenly;
+}
+.contactme{
+    font-size: 40px; 
+    width: 80%;
+    margin: 10vh auto; 
+    letter-spacing: 4px;
+    color: #22669D; 
+    text-align: center
+}
+.cont-contact1{
+    width: 40%; 
+    margin-left: 5vh; 
+    font-family: 'Inter', 
+    sans-serif;
+}
+.cont-contact2{
+    width: 40%; 
+    margin-left: 5vh; 
+    font-family: 'Inter', sans-serif;
+}
+.title-contact{
+    font-size: 25px;
+}
+.subtitle-contact{
+    font-size: 22px;
+}
+
+.up-2{
+    display: none;
+    
+}
+.up-3{
+    display: none;
+    
+}
+
+
+}
+@media (min-width:312px) and (max-width:650px){
+    .texto{
+        margin: 30vh 0vh;
         height: auto;
     }
     .menu{
@@ -582,14 +1377,219 @@ a{
         width: 60%;
         height: auto;
         margin: 5vh auto;
-}
+    }
     .buttons button{
-    width: 30vh;
-    height: 8vh;
+    width: 25vh;
+    height: 7vh;
     margin: 2vh;
     justify-content: center;
     align-items: center;
+    font-size: 20px;
+    }
+    
+    .texto{
+    margin: 25vh auto;
+    margin-left: 10%;
+    width: 80%;
+    height: auto;
+    
+}
+.title{
+    width: 80%;
+    margin: 0 auto;
+    margin-left: 10%;
+    /* clave */
+}
+.texto h1{
+    margin-right:9%;
+    font-weight: 900;
+    letter-spacing: 5px;
+    font-size: 70px;
+    margin-top: 2vh;
+}
+    .texto h3{
+        margin-left: 10%;
+        font-size: 20px;
+    }
+    .im {
+    margin-top: 6vh;
+    margin-left: 15%;
+}
+.about-text{
+    width: 50%;
+    height:6%;
+    font-size: 18px;
+}
+.about-container{
+    width: 100%;
+    height: 80vh;
+}
+.history{
+    height: auto; 
+    width: 90%;
+    font-size: 15px;
+    position: absolute;
+    top: 42vh;
+}
+.btn-title{
+    font-size: 40px;
+}
+.about-me h4{
+    font-weight: 300; 
+    font-size: 20px; 
+    margin-bottom: 0vh;
+}
+.aboutme-photo{
+    position: absolute;
+    top: 15vh;
+    width: 20vh;
+    height: 20vh;
+}
+.skills-text{
+    width: 50%;
+    height:10%;
+    font-size: 18px;
 }
 
+.skills{
+    width: 100%;
+    height: auto;
+}
+.title-skill{
+    width: 90%;
+    display: flex;
+    margin-left: 1vh; 
+    margin-top: 1vh; 
+    font-size: 20px;
+    color: white
+}
+.cuadros{
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+.habilidad{
+    width: 22vh;
+    height: 20vh;
+    padding: 2vh;
+    margin: 2vh;
+}
+.img{
+    width: 40px;
+    margin-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.img h4{
+    margin-left: 10px;
+    font-size: 10px;
+    color: #E6F0FD;
+}
+.img img{
+    margin-top: 10px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    transition-duration: .5s;
+}
+.projects-text{
+    width: 50%;
+    height:6%;
+    font-size: 18px;
+}
+.code{
+    border: none;
+    background-color: #2575fc;
+    border-radius: 5px;
+    padding: 1vh 2.5vh;
+    margin-top: 2vh;
+    
+}
+.code a{
+    font-weight: 800;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 1rem;
+    color:#0b3681;
+}
+.go{
+    border: none;
+    background-color: #DDE33F;
+    border-radius: 5px;
+    padding: 1vh 2vh;
+    margin-top: 2vh;
+}
+.go a{
+    font-size: 1rem;
+}
+.botones{
+    height: 6vh;
+    margin-left: 1vh;
+}
+.containers-projects{
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+}
+.containers-projects img{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: auto;
+    margin-top: 3vh;
+    width:150px;
+    height: 150px;
+
+    
+}
+.project-sentence{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 55%;
+    height: 50%;
+    margin: 0;
+    top: 10%;
+    left: 40%;
+}
+.project-sentence h3{
+    font-size: 14px;
+    margin: 0;
+}
+.contact{
+    justify-content: space-evenly;
+}
+.contactme{
+    font-size: 40px; 
+    width: 80%;
+    margin: 5vh auto; 
+    letter-spacing: 4px;
+    color: #22669D; 
+    text-align: center
+}
+.cont-contact1{
+    width: 40%; 
+    margin-left: 5vh; 
+    font-family: 'Inter', 
+    sans-serif;
+}
+.cont-contact2{
+    width: 30%; 
+    margin-left: 5vh; 
+    font-family: 'Inter', sans-serif;
+}
+.title-contact{
+    font-size: 22px;
+}
+.subtitle-contact{
+    font-size: 20px;
+}
+
+.up-2{
+    display: none;
+    
+}
+.up-3{
+    display: none;
+    
+}
 
 }

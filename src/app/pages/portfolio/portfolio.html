@@ -3,8 +3,8 @@
     
         <div class="presentacion reveal">
             <div class="texto">
-            <div style="width: 100%;display: flex;">
-            <h3 class="im" #animatedText>I'm</h3>
+            <div class="title">
+            <h4 class="im" #animatedText>I'm</h4>
             <h1 #animatedText style="color: #2E7CE9;font-family: 'Jersey 10', sans-serif; letter-spacing: 2px;margin-left: 4vh;">ARIANA</h1>
             </div>
             <h3 #animatedText>an Software Engineering Student
@@ -29,23 +29,23 @@
             <div class="button a btn-2"><a [routerLink]="[]" fragment="about-me" routerLinkActive="active">About me</a></div>
             <div class="button b btn-3"><a [routerLink]="[]" fragment="skills" routerLinkActive="active">Skills</a></div>
             <div class="button a btn-4"><a [routerLink]="[]" fragment="projects" routerLinkActive="active">Projects</a></div>
-            <div class="button b btn-5"><a [routerLink]="[]" fragment="contact-me" routerLinkActive="active">Contact me</a></div>
+            <div class="button b btn-5"><a [routerLink]="[]" fragment="contact" routerLinkActive="active">Contact me</a></div>
         </nav>
         </div>
         
         <div class="about-me reveal"id="about-me" >
             <div class="about-text"  style="margin-top: 10vh;">
-                    <h1 style="font-size: 64px;" >About Me</h1>
+                    <h1 class="btn-title" >About Me</h1>
                 </div>
-            <div style="width: 100%; height: 900px; display: flex; flex-wrap: wrap; justify-content: space-evenly; margin-top: 15vh;">
-                <div style="height: 624px; width: 1100px;">
-                <h4>
+            <div class="about-container">
+                <div class="history">
+            <h4>
                 I have been self-studying programming since 2024, starting with HTML and C++, and later expanding into JavaScript and CSS.</h4>
             <h4 >
                 After finishing high school, I enrolled in summer preparatory courses at ISIL, where I studied Java, Angular, and React. During this period, I built my first CRUD applications and developed projects using APIs, learning how to create database-connected systems.</h4>
             <h4 >
                 Currently, I am working with Figma and focusing on UI design for web applications.</h4>
-            <h4 style="color: white;font-weight: 300; letter-spacing: 2px; line-height: 40px;font-size: 36px; margin-bottom: 2vh;">
+            <h4>
                 Beyond technology, I have a strong interest in art. I enjoy drawing and singing, and I like games such as Project Zomboid and Roblox.</h4>
             </div>
              
@@ -58,7 +58,7 @@
         </div>
         <div class="skills" id="skills">
                 <div class="skills-text reveal">
-                    <h1 style="font-size: 64px;">Skills</h1>
+                    <h1 class="btn-title">Skills</h1>
                 </div>
                 <div class="up-3">
                 <a [routerLink]="[]" fragment="about-me" routerLinkActive="active"
@@ -68,70 +68,57 @@
             </div>
             <div class="cuadros">
                 <div class="habilidad reveal">
-                    <h2 style="width: 90%;display: flex;margin-left: 8vh; margin-top: 3vh; font-size: 48px;color: white;" class="reveal">Frontend</h2>
+                    <h2  class="reveal title-skill">Frontend</h2>
                     <div class="img">
                         <img src="/icons/js.png">
-                        <h4 style="color: white;">JavaScript</h4>
                     </div>
                     <div class="img">
                         <img src="/icons/css.png" >
-                        <h4 style="color: white;margin-left: 20px;">CSS</h4>
                     </div>
                     <div class="img">
                         <img src="/icons/html.png">
-                        <h4 style="color: white;margin-left: 10px;">HTML</h4>
                     </div>
                     <div class="img">
                         <img src="/icons/react.png" >
-                        <h4 style="color: white;margin-left: 12px;">React</h4>
                     </div>
                     <div class="img">
                         <img src="/icons/angular.png" >
-                        <h4 style="color: white;margin-left: 2px;">Angular</h4>
                     </div>
                     <div class="img">
                         <img src="/icons/oreja.png">
-                        <h4 style="color: white;">Bootstrap</h4>
                     </div>
                 </div>
                 <div class="habilidad reveal">
-                    <h2 style="width: 90%;display: flex;margin-left: 8vh; margin-top: 6vh; font-size: 48px;color: white;" class="reveal">Backend</h2>
-                    <div class="img" style="margin-bottom: 20vh;">
+                    <h2  class="reveal title-skill">Backend</h2>
+                    <div class="img" >
                         <img src="/icons/java.png"  alt="">
-                        <h4 style="color: white;margin-left: 20px;">Java</h4>
                     </div>
-                    <div class="img" style="margin-bottom: 20vh;">
+                    <div class="img">
                         <img src="/icons/c.png" alt="">
-                        <h4 style="color: white;margin-left: 20px;">C++</h4>
                     </div>
-                    <div class="img" style="margin-bottom: 20vh;">
+                    <div class="img" >
                         <img src="/icons/springboot.png" alt="">
-                        <h4 style="color: white;">SpringBoot</h4>
                     </div>
                 </div>
 
                 <div class="habilidad reveal">
-                    <h2 style="width: 90%;display: flex;margin-left: 8vh; margin-top: 6vh; font-size: 48px;color: white;"  class="reveal">Learning</h2>
-                    <div class="img" style="margin-bottom: 20vh;">
-                        <img src="/icons/figma.png"  alt="">
-                        <h4 style="color: white;margin-left: 10px;">Figma</h4>
+                    <h2 class="reveal title-skill">Learning</h2>
+                    <div class="img" >
+                        <img src="/icons/figma.png" alt="">
                     </div>
                     
                 </div>
 
                 <div class="habilidad reveal">
-                    <h2 style="width: 90%;display: flex;margin-left: 8vh; margin-top: 6vh; font-size: 48px;color: white;"  class="reveal">Tools</h2>
-                    <div class="img" style="margin-bottom: 20vh;">
+                    <h2 class="reveal title-skill" >Tools</h2>
+                    <div class="img" >
                         <img src="/icons/vscode.png"  alt="">
-                        <h4 style="color: white;margin-left: 5px;">VSCode</h4>
                     </div>
-                    <div class="img" style="margin-bottom: 20vh;">
+                    <div class="img" >
                         <img src="/icons/github.png"  alt="">
-                        <h4 style="color: white;margin-left: 5px;">GitHub</h4>
                     </div>
-                    <div class="img" style="margin-bottom: 20vh;">
+                    <div class="img" >
                         <img src="/icons/postman.png"  alt="">
-                        <h4 style="color: white;margin-left: 5px;">Postman</h4>
                     </div>
                     
                 </div>
@@ -141,7 +128,7 @@
         </div>
         <div class="projects" id="projects">
             <div class="projects-text reveal">
-                    <h1 style="font-size: 64px;">Projects</h1>
+                    <h1 class="btn-title">Projects</h1>
             </div>
             <div class="containers-projects reveal">
                 <img src="/icons/isil-paginas.png" alt="">
@@ -149,8 +136,11 @@
                     <h3 style="color: white;">I implemented an authentication system and full 
                         CRUD operations on a replica of the ISIL website, applying modular architecture,
                          route protection with guards, form validation, and state management.</h3>
-                    <button class="code"><a href="https://github.com/ArianaEyes/Replica-Isil" target="_blank">Code</a></button>
+                         <div class="botones">
+                            <button class="code"><a href="https://github.com/ArianaEyes/Replica-Isil" target="_blank">Code</a></button>
                     <button class="go"><a href="#" target="_blank">Go to Page</a></button>
+                         </div>
+                    
 
                 </div>
             </div>
@@ -160,8 +150,11 @@
                     <h3 style="color: white;">I implemented an authentication system and full 
                         CRUD operations on a replica of the Alfin Banco website, applying modular architecture,
                          route protection with guards, form validation, and state management.</h3>
-                    <button class="code"><a href="" target="_blank">Code</a></button>
+                         <div class="botones">
+                            <button class="code"><a href="" target="_blank">Code</a></button>
                     <button class="go"><a href="https://pagina-alfin-banco-tfwh.vercel.app/prestamos" target="_blank">Go to Page</a></button>
+                         </div>
+                    
 
                 </div>
             </div>
@@ -177,8 +170,10 @@
                     <h3 style="color: white;">I implemented an authentication system and full 
                         CRUD operations on a replica of the ISIL website, applying modular architecture,
                          route protection with guards, form validation, and state management.</h3>
-                    <button class="code"><a href="" target="_blank">Code</a></button>
+                    <div class="botones">
+                        <button class="code"><a href="" target="_blank">Code</a></button>
                     <button class="go"><a href="https://pagina-alfin-banco-tfwh.vercel.app/prestamos" target="_blank">Go to Page</a></button>
+                    </div>
 
                 </div>
             </div>
@@ -187,24 +182,25 @@
                 <div class="project-sentence">
                     <h3 style="color: white;">Personal portfolio website developed to showcase projects and technical skills, 
                         focusing on responsive design, component-based architecture, and optimized deployment.</h3>
-                    <button class="code"><a href="" target="_blank">Code</a></button>
+                    
+                        <div class="botones">
+                            <button class="code"><a href="" target="_blank">Code</a></button>
                     <button class="go"><a href="https://pagina-alfin-banco-tfwh.vercel.app/prestamos" target="_blank">Go to Page</a></button>
+                        </div>
 
                 </div>
             </div>
         </div>
         
         <div class="contact" id="contact">
-            <h1 style="font-size: 70px; width: 1200px;
-            margin: 0 auto; letter-spacing: 4px;color: #22669D; 
-            text-align: center;" class="reveal">Contact me if you are interested in my services</h1>
-            <div style="width: 40%; margin-left: 12vw; font-family: 'Inter', sans-serif;">
-                <h3 style="font-size: 48px; color: white;" class="reveal">Email:</h3> 
-                <h3 style="font-size: 48px; color: #C7CF54;" class="reveal">61152185@mail.isil.pe</h3>
+            <h1 class="reveal contactme">Contact me if you are interested in my services</h1>
+            <div class="cont-contact1">
+                <h3 class="reveal title-contact">Email:</h3> 
+                <h3 class="reveal subtitle-contact">61152185@mail.isil.pe</h3>
             </div>
-            <div style="width: 30%; font-family: 'Inter', sans-serif;">
-                <h3 style="font-size: 48px; color: white;" class="reveal">Phone:</h3> 
-                <h3 style="font-size: 48px; color: #C7CF54;" class="reveal">+51 919 586 428</h3>
+            <div class="cont-contact2">
+                <h3 class="reveal title-contact">Phone:</h3> 
+                <h3 class="reveal subtitle-contact">+51 919 586 428</h3>
             </div>
             <div class="up reveal">
                 <a [routerLink]="[]" fragment="projects" routerLinkActive="active"

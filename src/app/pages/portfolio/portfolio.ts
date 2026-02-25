@@ -79,7 +79,7 @@ export class Portfolio implements AfterViewInit {
       this.renderer.setAttribute(snow, 'src', randomImage);
       this.renderer.addClass(snow, 'snow');
 
-      this.renderer.setStyle(snow, 'left', Math.random() * 100 + 'vw');
+      this.renderer.setStyle(snow, 'left', Math.random() * 100 + '%');
 
       const size = 10 + Math.random() * 25;
       this.renderer.setStyle(snow, 'width', size + 'px');
