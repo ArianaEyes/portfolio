@@ -1,6 +1,6 @@
 {
   "buildCommand": "ng build",
-  "outputDirectory": "dist/portafolio",
+  "outputDirectory": "dist/portafolio/browser",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
