@@ -629,6 +629,17 @@ a{
         margin: auto;
         margin-left: 10%;
     }
+    .up-2{
+    
+    left: 170vh;
+    top: 363vh;
+    
+}
+.up-3{
+    left: 170vh;
+    top: 196vh;
+   
+}
 }
 @media (min-width:1400px) and (max-width:1699px) {
     .menu{
@@ -1441,7 +1452,7 @@ about-text{
 }
 .aboutme-photo{
     position: absolute;
-    top: 15vh;
+    top: 20vh;
     width: 20vh;
     height: 20vh;
 }
@@ -1558,12 +1569,13 @@ about-text{
     justify-content: space-evenly;
 }
 .contactme{
-    font-size: 40px; 
+    font-size: 45px; 
     width: 80%;
     margin: 5vh auto; 
-    letter-spacing: 4px;
+    letter-spacing: 0px;
     color: #22669D; 
-    text-align: center
+    text-align: center;
+    font-weight: 600;
 }
 .cont-contact1{
     width: 40%; 
@@ -1578,8 +1590,10 @@ about-text{
 }
 .title-contact{
     font-size: 22px;
+    font-weight: 600;
 }
 .subtitle-contact{
+    font-weight: 600;
     font-size: 20px;
 }
 
