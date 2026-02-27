@@ -55,7 +55,7 @@
     display: flex;
     flex-wrap: wrap;
     width: 650px;
-    height: 65vh;
+    height: 39em;
     justify-content: space-between;
     margin-left: auto;
     margin-top: 15vh;
@@ -607,7 +607,57 @@ a{
   from { transform: translateY(0); }
   to   { transform: translateY(100vh); }
 }
+@media (min-width:1921px) and (max-width:2560px){
+    .btn-1{
+    clip-path: polygon(
+    48% 0%,
+    100% 0%,
+    100% 100%,
+    39% 100%
+  );
+}
+.btn-1 a{
+    margin-left: 20vh;
+}
+.btn-2{
+    clip-path: polygon(
+    39% 0%,
+    100% 0%,
+    100% 100%,
+    30.5% 100%
+  );
+}
+.btn-3{
+    clip-path: polygon(
+    30% 0%,
+    100% 0%,
+    100% 100%,
+22% 100%
+  );
+}
 
+.btn-4{
+    clip-path: polygon(
+    22% 0%,
+    100% 0%,
+    100% 100%,
+    14% 100%
+  );
+}
+.btn-4 a{
+    width: 650px;
+    margin-left: 9vh;
+}
+.btn-5{
+    clip-path: polygon(
+    12.8% 0%,
+    100% 0%,
+    100% 100%,
+    12.8% 100%
+  );
+}
+
+}
 @media (min-width:1700px) and (max-width:1919px) {
         .title[_ngcontent-ng-c2281305362]{
         width: 70%;
@@ -619,8 +669,22 @@ a{
         margin:20vh 0vh 0vh 6vh;
     }
     .menu{
-        height: 65vh;
-    }
+    
+    height: 39em;
+    
+}
+    .btn-5{
+    clip-path: polygon(
+    11.8% 0%,
+    100% 0%,
+    100% 100%,
+    11.8% 100%
+  );
+}
+.btn-5 a{
+    margin-left: 9vh;
+    width: 650px;
+}
     .about-me h4{
         font-size: 25px;
     }
@@ -630,14 +694,14 @@ a{
         margin-left: 10%;
     }
     .up-2{
+    left: 80%;
+    top: 390%;
     
-    left: 170vh;
-    top: 363vh;
     
 }
 .up-3{
-    left: 170vh;
-    top: 196vh;
+    left: 80%;
+    top: 200%;
    
 }
 }
@@ -699,8 +763,8 @@ a{
 }
 .up-2{
     position: absolute;
-    left: 140vh;
-    top: 376vh;
+    left: 80%;
+    top: 410%;
     width: 10vh;
     height: 10vh;
     border-radius: 100%;
@@ -709,8 +773,8 @@ a{
 }
 .up-3{
     position: absolute;
-    left: 140vh;
-    top: 210vh;
+    left: 80%;
+    top: 223%;
     width: 10vh;
     height: 10vh;
     border-radius: 100%;
@@ -1109,7 +1173,7 @@ about-text{
     height: 50%;
     margin: 0;
     top: 13%;
-    left: 40%;
+    left: 45%;
 }
 .project-sentence h3{
     font-size: 20px;
@@ -1117,33 +1181,37 @@ about-text{
 }
 .contact{
     justify-content: space-evenly;
+    font-size: 40px; 
 }
 .contactme{
-    font-size: 40px; 
+    
     width: 80%;
     margin: 10vh auto; 
     letter-spacing: 4px;
     color: #22669D; 
-    text-align: center
+    text-align: center;
+    font-size: 1em;
 }
 .cont-contact1{
     width: 40%; 
-    margin-left: 10vh; 
+    margin-left: 5vh; 
     font-family: 'Inter', 
     sans-serif;
 }
 .cont-contact2{
     width: 40%; 
-    margin-left: 10vh; 
+    margin-left: 5vh; 
     font-family: 'Inter', sans-serif;
 }
 .title-contact{
-    font-size: 30px;
+    font-size: .6em;
 }
 .subtitle-contact{
-    font-size: 25px;
+    font-size: .6em;
 }
-
+.up{
+    margin-top: 5vh;
+}
 .up-2{
     display: none;
     
@@ -1375,7 +1443,304 @@ about-text{
 
 
 }
-@media (min-width:312px) and (max-width:650px){
+@media (min-width:351px) and (max-width:650px){
+    .texto{
+        margin: 30vh 0vh;
+        height: auto;
+        font-size: 20px;
+    }
+    .menu{
+        display: none;
+    }
+    .buttons{
+        justify-content: center;
+        width: 60%;
+        height: auto;
+        margin: 5vh auto;
+    }
+    .buttons button{
+    width: 25vh;
+    height: 7vh;
+    margin: 2vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    }
+    
+    .texto{
+    margin: 25vh auto;
+    margin-left: 10%;
+    width: 80%;
+    height: auto;
+    
+}
+.title{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    /* clave */
+}
+.texto h1{
+    margin-right:12%;
+    font-weight: 900;
+    letter-spacing: 5px;
+    font-size: 2.5em;
+    margin-top: 3.5vh;
+}
+    .texto h3{
+        margin-left: 0%;
+        font-size: .8em;
+        margin: 0 auto;
+    }
+    .im {
+    margin-top: 6vh;
+    margin-left: 8%;
+}
+.about-text{
+    width: 15em;
+    height:4em;
+    font-size: 1em;
+}
+.about-container{
+    width: 100%;
+    height:90vh;
+}
+.history{
+    height: auto; 
+    width: 90%;
+    font-size: .5em;
+    font-weight: 600;
+    text-align: center;
+    position: absolute;
+    top: 42vh;
+}
+.btn-title{
+    font-size: 40px;
+}
+.about-me h4{
+    font-weight: 300; 
+    font-size: 20px; 
+    margin-bottom: 0vh;
+}
+.aboutme-photo{
+    position: absolute;
+    top: 20vh;
+    width: 20vh;
+    height: 20vh;
+}
+.skills-text{
+    width: 15em;
+    height:4em;
+    font-size: 1em;
+}
+
+.skills{
+    width: 100%;
+    height: auto;
+}
+.title-skill{
+    width: 90%;
+    display: flex;
+    margin-left: 1vh; 
+    margin-top: 1vh; 
+    font-size: 20px;
+    color: white
+}
+.cuadros{
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.habilidad{
+    width: 30vh;
+    height: auto;
+    padding: 2vh;
+    margin: 2vh;
+}
+.img{
+    width: 100px;
+    margin-left:10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.img img{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    transition-duration: .5s;
+}
+.projects-text{
+    width: 15em;
+    height:4em;
+    font-size: 1em;
+}
+.code{
+    border: none;
+    background-color: #2575fc;
+    border-radius: .3em;
+    padding: .2em .6em;
+}
+.code a{
+    font-weight: 800;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 1rem;
+    color:#0b3681;
+}
+.go{
+    border: none;
+    background-color: #DDE33F;
+    border-radius: .3em;
+    padding: .3em .8em;
+    margin: 0;
+    margin-left: 1vh;
+}
+.go a{
+    font-size: 1rem;
+}
+.botones{
+    height: 1.5%;
+    margin: 0;
+    margin-top: 2vh;
+    margin-left:1vh;
+}
+.containers-projects{
+    width: 90%;
+    height: 17%;
+    align-items: center;
+    border-radius: 10px;
+}
+.containers-projects img{
+    display: flex;
+    flex-wrap: wrap;
+    margin:0%;
+    margin-right: 65%;
+    width:65%;
+    height:65% ;
+}
+.project-sentence{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 25px;
+    margin: 0;
+    width: 55%;
+    height: 50%;
+    top: 8%;
+    left: 42%;
+}
+.project-sentence h3{
+    font-size: .6em;
+    margin: 0;
+}
+.contact{
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+.contactme{
+    font-size: 2em; 
+    width: 90%;
+    margin: 5vh auto; 
+    letter-spacing: 0px;
+    color: #22669D; 
+    text-align: center;
+    font-weight: 600;
+}
+.cont-contact1{
+    margin: 0;
+    width: 100%; 
+    font-family: 'Inter', 
+    sans-serif;
+}
+.cont-contact2{
+    width: 100%; 
+    font-family: 'Inter', sans-serif;
+}
+.title-contact{
+    text-align: center;
+    font-size: .8em;
+    font-weight: 600;
+}
+.subtitle-contact{
+    text-align: center;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.up-2{
+    display: none;
+    
+}
+.up-3{
+    display: none;
+    
+}
+
+}
+@media (min-width:351px) and (max-width:430px){
+.cuadros{
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.habilidad{
+    width: 30vh;
+    height: auto;
+    padding: 2vh;
+    margin: 2vh;
+}
+.img{
+    width: 100px;
+    margin-left:10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.img img{
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    transition-duration: .5s;
+}
+.projects-text{
+    width: 15em;
+    height:4em;
+    font-size: 1em;
+}
+
+.containers-projects{
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+}
+.containers-projects img{
+    display: flex;
+    flex-wrap: wrap;
+    margin:0%;
+    margin-right: 65%;
+    width:65%;
+    height:65% ;
+    margin-top: 3vh;
+}
+.project-sentence{
+    position: absolute;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 25px;
+    width: 55%;
+    height: 50%;
+    top: 6%;
+    left: 44%;
+}
+.project-sentence h3{
+    font-size: .6em;
+    margin: 0;
+}
+
+}
+@media (min-width:312px) and (max-width:350px){
     .texto{
         margin: 30vh 0vh;
         height: auto;
@@ -1511,15 +1876,15 @@ about-text{
     transition-duration: .5s;
 }
 .projects-text{
-    width: 50%;
-    height:6%;
-    font-size: 18px;
+    width: 15em;
+    height:4em;
+    font-size: 1em;
 }
 .code{
     border: none;
     background-color: #2575fc;
-    border-radius: 5px;
-    padding: 1vh 2.5vh;
+    border-radius: .3em;
+    padding: .2em .6em;
     margin-top: 2vh;
     
 }
@@ -1532,16 +1897,17 @@ about-text{
 .go{
     border: none;
     background-color: #DDE33F;
-    border-radius: 5px;
-    padding: 1vh 2vh;
+    border-radius: .3em;
+    padding: .2em .6em;
     margin-top: 2vh;
+    margin-left: 1vh;
 }
 .go a{
     font-size: 1rem;
 }
 .botones{
-    height: 6vh;
-    margin-left: 1vh;
+    height: 3em;
+    margin: 0;
 }
 .containers-projects{
     width: 100%;
@@ -1551,33 +1917,34 @@ about-text{
 .containers-projects img{
     display: flex;
     flex-wrap: wrap;
-    margin-right: auto;
+    margin:0%;
+    margin-right: 65%;
     margin-top: 3vh;
-    width:150px;
-    height: 150px;
-
-    
+    width:60%;
+    height:60% ;
 }
 .project-sentence{
     position: absolute;
     display: flex;
     flex-wrap: wrap;
+    font-size: 20px;
     width: 55%;
     height: 50%;
     margin: 0;
     top: 10%;
-    left: 40%;
+    left: 42%;
 }
 .project-sentence h3{
-    font-size: 14px;
+    font-size: .6em;
     margin: 0;
 }
 .contact{
     justify-content: space-evenly;
+    font-size: 20px;
 }
 .contactme{
-    font-size: 45px; 
-    width: 80%;
+    font-size: 1.8em; 
+    width: 90%;
     margin: 5vh auto; 
     letter-spacing: 0px;
     color: #22669D; 
@@ -1585,23 +1952,24 @@ about-text{
     font-weight: 600;
 }
 .cont-contact1{
-    width: 40%; 
-    margin-left: 5vh; 
+    margin: 0;
+    width: 100%; 
     font-family: 'Inter', 
     sans-serif;
 }
 .cont-contact2{
-    width: 30%; 
-    margin-left: 5vh; 
+    width: 100%; 
     font-family: 'Inter', sans-serif;
 }
 .title-contact{
-    font-size: 22px;
+    text-align: center;
+    font-size: .8em;
     font-weight: 600;
 }
 .subtitle-contact{
+    text-align: center;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1em;
 }
 
 .up-2{
