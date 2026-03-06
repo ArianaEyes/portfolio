@@ -1485,7 +1485,7 @@ about-text{
     margin: 2vh;
     justify-content: center;
     align-items: center;
-    font-size: 1em;
+    font-size: .8em;
     }
     .text-gradient {
     font-size: 1em;
@@ -1779,16 +1779,15 @@ about-text{
         margin: 5vh auto;
     }
     .buttons a{
-    width: 100%;
+        width: 34vh;
     height: 7vh;
-    margin: 2vh 0vh;
+    margin-top: 2vh;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
-    font-size: .8em;
+    font-size: 1em;
     }
-    .text-gradient{
-        font-size: 1em;
+    .text-gradient {
+    font-size: 1em;
     }
     
     .texto{
