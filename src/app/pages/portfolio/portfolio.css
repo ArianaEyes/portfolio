@@ -1,7 +1,22 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+:root {
+  --color-primary:  #2E7CE9;
+  --color-accent:   #DDE33F;
+  --color-light:    #E6F0FD;
+  --color-bg:       #000000;
+  --color-contact:  #22669D;
+  --font-display:   "Staatliches", sans-serif;
+  --font-body:      "Barlow Semi Condensed", sans-serif;
+  --font-ui:        "Inter", "Segoe UI", sans-serif;
+}
+
+/* ─── RESET ──────────────────────────────────── */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
 }
 
 .container-fluid{
@@ -28,6 +43,7 @@
   overflow-x: hidden;
   overflow-y: hidden;
 }
+/* ─── FONDO ANIMADO ──────────────────────────── */
 @keyframes radial {
   from {
     background-position:
@@ -50,6 +66,27 @@
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
+}
+/* ─── NIEVE ──────────────────────────────────── */
+.snow-container {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+  opacity: 0.2;
+}
+.snow {
+  position: absolute;
+  top: -50px;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes fall {
+  from { transform: translateY(0); }
+  to   { transform: translateY(100vh); }
 }
 .menu{
     display: flex;
@@ -391,12 +428,12 @@ a{
     transform: scale(1.1);
     transition: 0.3s;
 } 
-.code{
-    border: none;
-    background-color: #2575fc;
-    border-radius: 5px;
-    padding: 1vh 3vh;
-    
+.code {
+  border: none;
+  background: #2575fc;
+  border-radius: .3em;
+  padding: .2em .6em;
+  margin-top: 2vh;
 }
 .code a{
     font-weight: 800;
@@ -737,14 +774,9 @@ a{
     width: 40vh;
     height: 40vh;
 }
-.code{
-    border: none;
-    background-color: #2575fc;
-    border-radius: 5px;
-    padding: 2vh 3vh;
-    margin-top: 2vh;
+.code { border-radius: 5px; padding: 1vh 2.5vh; }
     
-}
+
 .code a{
     font-weight: 800;
     font-family: "Barlow Semi Condensed", sans-serif;
@@ -904,14 +936,7 @@ about-text{
     height:7%;
     font-size: 25px;
 }
-.code{
-    border: none;
-    background-color: #2575fc;
-    border-radius: 5px;
-    padding: 1vh 2.5vh;
-    margin-top: 2vh;
-    
-}
+.code { border-radius: 5px; padding: 2vh 3.5vh; }
 .code a{
     font-weight: 800;
     font-family: "Barlow Semi Condensed", sans-serif;
@@ -1124,11 +1149,7 @@ about-text{
     font-size: 18px;
 }
 .code{
-    border: none;
-    background-color: #2575fc;
-    border-radius: 5px;
-    padding: 1vh 2.5vh;
-    margin-top: 2vh;
+    .code { border-radius: 5px; padding: 1vh 2.5vh; }
     
 }
 .code a{
@@ -1348,11 +1369,7 @@ about-text{
     font-size: 18px;
 }
 .code{
-    border: none;
-    background-color: #2575fc;
-    border-radius: 5px;
-    padding: 1vh 2.5vh;
-    margin-top: 2vh;
+    .code { border-radius: 5px; padding: 1vh 2.5vh; }
     
 }
 .code a{
@@ -1443,7 +1460,7 @@ about-text{
 
 
 }
-@media (min-width:351px) and (max-width:650px){
+@media (min-width:351px) and (max-width:650px) and (min-height: 651px) and (max-height: 800px){
     .texto{
         margin: 30vh 0vh;
         height: auto;
@@ -1503,7 +1520,7 @@ about-text{
 }
 .about-container{
     width: 100%;
-    height:90vh;
+    height:100vh;
 }
 .history{
     height: auto; 
@@ -1576,10 +1593,7 @@ about-text{
     font-size: 1em;
 }
 .code{
-    border: none;
-    background-color: #2575fc;
-    border-radius: .3em;
-    padding: .2em .6em;
+    .code { border-radius: 5px; padding: 1vh 2.5vh; }
 }
 .code a{
     font-weight: 800;
@@ -1679,6 +1693,36 @@ about-text{
 
 }
 @media (min-width:351px) and (max-width:430px){
+    .texto{
+        margin: 30vh 0vh;
+        height: auto;
+        font-size: 20px;
+    }
+    .menu{
+        display: none;
+    }
+    .buttons{
+        justify-content: center;
+        width: 60%;
+        height: auto;
+        margin: 5vh auto;
+    }
+    .buttons button{
+    width: 25vh;
+    height: 7vh;
+    margin: 2vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    }
+    
+    .texto{
+    margin: 25vh auto;
+    margin-left: 10%;
+    width: 80%;
+    height: auto;
+    
+}
 .cuadros{
     justify-content: center;
     width: 100%;
@@ -1881,11 +1925,7 @@ about-text{
     font-size: 1em;
 }
 .code{
-    border: none;
-    background-color: #2575fc;
-    border-radius: .3em;
-    padding: .2em .6em;
-    margin-top: 2vh;
+    .code { border-radius: 5px; padding: 1vh 2.5vh; }
     
 }
 .code a{
