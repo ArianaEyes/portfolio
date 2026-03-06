@@ -1907,8 +1907,8 @@ about-text{
     font-size: 1em;
 }
 .code{
-    .code { border-radius: 5px; padding: 1vh 2.5vh; }
-    
+   border-radius: 5px; padding: 1vh 2.5vh; 
+   margin: 0;
 }
 .code a{
     font-weight: 800;
@@ -1917,12 +1917,8 @@ about-text{
     color:#0b3681;
 }
 .go{
-    border: none;
-    background-color: #DDE33F;
-    border-radius: .3em;
-    padding: .2em .6em;
-    margin-top: 2vh;
-    margin-left: 1vh;
+    border-radius: 5px; padding: 1vh 2.5vh; 
+    margin-left:10px;
 }
 .go a{
     font-size: 1rem;
@@ -1959,6 +1955,12 @@ about-text{
 .project-sentence h3{
     font-size: .6em;
     margin: 0;
+}
+.botones{
+    height: 1%;
+    margin: 0;
+    margin-top: 1vh;
+    margin-left:1vh;
 }
 .contact{
     justify-content: space-evenly;
