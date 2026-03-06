@@ -254,7 +254,7 @@ a {
 a{
     text-decoration: none;
 }
-.buttons button{
+.buttons a{
     width: 317px;
     height: 84px;
     display: flex;
@@ -267,7 +267,7 @@ a{
     box-shadow: 0px 17px 4px rgba(0, 0, 0, 0.762);
     transition-duration: 0.3s;
 }
-.buttons button:hover{
+.buttons a:hover{
     transform: scale(1.1);
     transition: 0.3s;
     
@@ -282,6 +282,7 @@ a{
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  font-size: 28px;
 }
 .download:hover{
     background-color: #2e7ce97c; 
@@ -1476,7 +1477,7 @@ about-text{
         height: auto;
         margin: 5vh auto;
     }
-    .buttons button{
+    .buttons a{
     width: 25vh;
     height: 7vh;
     margin: 2vh;
@@ -1484,6 +1485,10 @@ about-text{
     align-items: center;
     font-size: .8em;
     }
+    .text-gradient {
+  
+  font-size: 1em;
+}
     
     .texto{
     margin: 25vh auto;
@@ -1495,7 +1500,7 @@ about-text{
 .title{
     text-align: center;
     width: 50%;
-    margin: 0 auto;
+    margin: 0 12%;
     /* clave */
 }
 .texto h1{
@@ -1679,7 +1684,10 @@ about-text{
     font-weight: 600;
     font-size: 1em;
 }
-
+.up{
+    height: 12vh;
+    width: 12vh;
+}
 .up-2{
     display: none;
     
