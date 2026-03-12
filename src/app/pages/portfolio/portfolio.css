@@ -1821,6 +1821,7 @@ about-text{
     height: auto;
     padding: 2vh;
     margin: 2vh;
+    
 }
 .img{
     width: 20%;
@@ -2083,6 +2084,7 @@ about-text{
     height: auto;
     padding: 2vh;
     margin: 2vh;
+    justify-content: center;
 }
 .img{
     width: 2.5em;
