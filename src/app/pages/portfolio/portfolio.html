@@ -1,24 +1,27 @@
-<div class="container-fluid"id="home">
-        <div #snowContainer class="snow-container"></div>
-    
-        <div class="presentacion reveal">
-            <div class="texto">
+<div class="container-fluid" id="home">
+    <div #snowContainer class="snow-container"></div>
+
+    <div class="presentacion reveal">
+        <div class="texto">
             <div class="title">
-            <h4 class="im" #animatedText>I'm</h4>
-            <h1 #animatedText style="color: #2E7CE9;font-family: 'Jersey 10', sans-serif; letter-spacing: 2px;margin-left: 4vh;">ARIANA</h1>
+                <h4 class="im" #animatedText>I'm</h4>
+                <h1 #animatedText
+                    style="color: #2E7CE9;font-family: 'Jersey 10', sans-serif; letter-spacing: 2px;margin-left: 4vh;">
+                    ARIANA</h1>
             </div>
             <h3 #animatedText>an Software Engineering Student
                 Full Stack</h3>
-                <h3 #animatedText>Development in Training</h3>
-                <h3 #animatedText><b>(Frontend / Backend / Figma)</b></h3>
-                <div class="buttons">
-                    <a href="/files/CV-Ariana.pdf" download="Ariana-Portocarrero-CV.pdf" class="download"> 
-                        <img src="/icons/download.png" width="40px" height="40px" style="margin-right: 10px;"><h4 class="text-gradient">Download CV</h4>
-                    </a>
-                    <a href="https://github.com/ArianaEyes" target="_blank" class="github">
-                        <img src="/icons/link.png" width="40px" height="40px" style="margin-right: 10px;">Ir a mi GitHub
-                    </a>
-                </div>
+            <h3 #animatedText>Development in Training</h3>
+            <h3 #animatedText><b>(Frontend / Backend / Figma)</b></h3>
+            <div class="buttons">
+                <a href="/files/CV-Ariana.pdf" download="Ariana-Portocarrero-CV.pdf" class="download">
+                    <img src="/icons/download.png" width="40px" height="40px" style="margin-right: 10px;">
+                    <h4 class="text-gradient">Download CV</h4>
+                </a>
+                <a href="https://github.com/ArianaEyes" target="_blank" class="github">
+                    <img src="/icons/link.png" width="40px" height="40px" style="margin-right: 10px;">Ir a mi GitHub
+                </a>
+            </div>
         </div>
         <!-- <div class="photo">
             <img src="/icons/foto.png" alt="">
@@ -26,185 +29,200 @@
         </div> -->
         <nav class="menu" ontouchstart="">
             <div class="button btn-1"><a [routerLink]="[]" fragment="home" routerLinkActive="active">Home</a></div>
-            <div class="button a btn-2"><a [routerLink]="[]" fragment="about-me" routerLinkActive="active">About me</a></div>
-            <div class="button b btn-3"><a [routerLink]="[]" fragment="skills" routerLinkActive="active">Skills</a></div>
-            <div class="button a btn-4"><a [routerLink]="[]" fragment="projects" routerLinkActive="active">Projects</a></div>
-            <div class="button b btn-5"><a [routerLink]="[]" fragment="contact" routerLinkActive="active">Contact me</a></div>
-        </nav>
-        </div>
-        
-        <div class="about-me reveal"id="about-me" >
-            <div class="about-text"  style="margin-top: 10vh;">
-                    <h1 class="btn-title" >About Me</h1>
-                </div>
-            <div class="about-container">
-                <div class="history">
-            <h4>
-                I have been self-studying programming since 2024, starting with HTML and C++, and later expanding into JavaScript and CSS.</h4>
-            <h4 >
-                After finishing high school, I enrolled in summer preparatory courses at ISIL, where I studied Java, Angular, and React. During this period, I built my first CRUD applications and developed projects using APIs, learning how to create database-connected systems.</h4>
-            <h4 >
-                Currently, I am working with Figma and focusing on UI design for web applications.</h4>
-            <h4>
-                Beyond technology, I have a strong interest in art. I enjoy drawing and singing, and I like games such as Project Zomboid and Roblox.</h4>
+            <div class="button a btn-2"><a [routerLink]="[]" fragment="about-me" routerLinkActive="active">About me</a>
             </div>
-             
+            <div class="button b btn-3"><a [routerLink]="[]" fragment="skills" routerLinkActive="active">Skills</a>
+            </div>
+            <div class="button a btn-4"><a [routerLink]="[]" fragment="projects" routerLinkActive="active">Projects</a>
+            </div>
+            <div class="button b btn-5"><a [routerLink]="[]" fragment="contact" routerLinkActive="active">Contact me</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="about-me reveal" id="about-me">
+        <div class="about-text" style="margin-top: 10vh;">
+            <h1 class="btn-title">About Me</h1>
+        </div>
+        <div class="about-container">
+            <div class="history">
+                <h4>
+                    I have been self-studying programming since 2024, starting with HTML and C++, and later expanding
+                    into JavaScript and CSS.</h4>
+                <h4>
+                    After finishing high school, I enrolled in summer preparatory courses at ISIL, where I studied Java,
+                    Angular, and React. During this period, I built my first CRUD applications and developed projects
+                    using APIs, learning how to create database-connected systems.</h4>
+                <h4>
+                    Currently, I am working with Figma and focusing on UI design for web applications.</h4>
+                <h4>
+                    Beyond technology, I have a strong interest in art. I enjoy drawing and singing, and I like games
+                    such as Project Zomboid and Roblox.</h4>
+            </div>
+
             <div class="aboutme-photo">
                 <img src="/icons/foto.png" alt="">
-                
+
             </div>
-            </div>
-            
         </div>
-        <div class="skills" id="skills">
-                <div class="skills-text reveal">
-                    <h1 class="btn-title">Skills</h1>
-                </div>
-                <div class="up-3">
-                <a [routerLink]="[]" fragment="about-me" routerLinkActive="active"
+
+    </div>
+    <div class="skills" id="skills">
+        <div class="skills-text reveal">
+            <h1 class="btn-title">Skills</h1>
+        </div>
+        <div class="up-3">
+            <a [routerLink]="[]" fragment="about-me" routerLinkActive="active"
                 style="display: flex; justify-content: center; margin-top: 2.5vh;">
-                    <img src="/icons/up.png" alt="" style="width: 50px;">
-                </a>
-            </div>
-            <div class="cuadros">
-                <div class="habilidad reveal">
-                    <h2  class="reveal title-skill">Frontend</h2>
-                    <div class="img">
-                        <img src="/icons/js.png">
-                    </div>
-                    <div class="img">
-                        <img src="/icons/css.png" >
-                    </div>
-                    <div class="img">
-                        <img src="/icons/html.png">
-                    </div>
-                    <div class="img">
-                        <img src="/icons/react.png" >
-                    </div>
-                    <div class="img">
-                        <img src="/icons/angular.png" >
-                    </div>
-                    <div class="img">
-                        <img src="/icons/oreja.png">
-                    </div>
-                </div>
-                <div class="habilidad reveal">
-                    <h2  class="reveal title-skill">Backend</h2>
-                    <div class="img" >
-                        <img src="/icons/java.png"  alt="">
-                    </div>
-                    <div class="img">
-                        <img src="/icons/c.png" alt="">
-                    </div>
-                    <div class="img" >
-                        <img src="/icons/springboot.png" alt="">
-                    </div>
-                </div>
-
-                <div class="habilidad reveal">
-                    <h2 class="reveal title-skill">Learning</h2>
-                    <div class="img" >
-                        <img src="/icons/figma.png" alt="">
-                    </div>
-                    
-                </div>
-
-                <div class="habilidad reveal">
-                    <h2 class="reveal title-skill" >Tools</h2>
-                    <div class="img" >
-                        <img src="/icons/vscode.png"  alt="">
-                    </div>
-                    <div class="img" >
-                        <img src="/icons/github.png"  alt="">
-                    </div>
-                    <div class="img" >
-                        <img src="/icons/postman.png"  alt="">
-                    </div>
-                    
-                </div>
-
-            </div>
-               
+                <img src="/icons/up.png" alt="" style="width: 50px;">
+            </a>
         </div>
-        <div class="projects" id="projects">
-            <div class="projects-text reveal">
-                    <h1 class="btn-title">Projects</h1>
-            </div>
-            <div class="containers-projects reveal">
-                <img src="/icons/isil-paginas.png" alt="">
-                <div class="project-sentence">
-                    <h3 style="color: white;">I implemented an authentication system and full 
-                        CRUD operations on a replica of the ISIL website, applying modular architecture,
-                         route protection with guards, form validation, and state management.</h3>
-                         <div class="botones">
-                            <button class="code"><a href="https://github.com/ArianaEyes/Replica-Isil" target="_blank">Code</a></button>
-                         </div>
-                    
-
+        <div class="cuadros">
+            <div class="habilidad reveal">
+                <h2 class="reveal title-skill">Frontend</h2>
+                <div class="img">
+                    <img src="/icons/js.png">
+                </div>
+                <div class="img">
+                    <img src="/icons/css.png">
+                </div>
+                <div class="img">
+                    <img src="/icons/html.png">
+                </div>
+                <div class="img">
+                    <img src="/icons/react.png">
+                </div>
+                <div class="img">
+                    <img src="/icons/angular.png">
+                </div>
+                <div class="img">
+                    <img src="/icons/oreja.png">
                 </div>
             </div>
-            <div class="containers-projects reveal">
-                <img src="/icons/alfinbanco-paginas.png" alt="">
-                <div class="project-sentence">
-                    <h3 style="color: white;">I implemented an authentication system and full 
-                        CRUD operations on a replica of the Alfin Banco website, applying modular architecture,
-                         route protection with guards, form validation, and state management.</h3>
-                         <div class="botones">
-                            <button class="code"><a href="https://github.com/ArianaEyes/Pagina-AlfinBanco" target="_blank">Code</a></button>
-                    <button class="go"><a href="https://pagina-alfin-banco-tfwh.vercel.app/prestamos" target="_blank">Go to Page</a></button>
-                         </div>
-                    
-
+            <div class="habilidad reveal">
+                <h2 class="reveal title-skill">Backend</h2>
+                <div class="img">
+                    <img src="/icons/java.png" alt="">
+                </div>
+                <div class="img">
+                    <img src="/icons/c.png" alt="">
+                </div>
+                <div class="img">
+                    <img src="/icons/springboot.png" alt="">
                 </div>
             </div>
-            <div class="up-2">
-                <a [routerLink]="[]" fragment="skills" routerLinkActive="active"
+
+            <div class="habilidad reveal">
+                <h2 class="reveal title-skill">Learning</h2>
+                <div class="img">
+                    <img src="/icons/figma.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="habilidad reveal">
+                <h2 class="reveal title-skill">Tools</h2>
+                <div class="img">
+                    <img src="/icons/vscode.png" alt="">
+                </div>
+                <div class="img">
+                    <img src="/icons/github.png" alt="">
+                </div>
+                <div class="img">
+                    <img src="/icons/postman.png" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="projects" id="projects">
+        <div class="projects-text reveal">
+            <h1 class="btn-title">Projects</h1>
+        </div>
+        <div class="containers-projects reveal">
+            <img src="/icons/isil-paginas.png" alt="">
+            <div class="project-sentence">
+                <h3 style="color: white;">I implemented an authentication system and full
+                    CRUD operations on a replica of the ISIL website, applying modular architecture,
+                    route protection with guards, form validation, and state management.</h3>
+                <div class="botones">
+                    <button class="code"><a href="https://github.com/ArianaEyes/Replica-Isil"
+                            target="_blank">Code</a></button>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="containers-projects reveal">
+            <img src="/icons/alfinbanco-paginas.png" alt="">
+            <div class="project-sentence">
+                <h3 style="color: white;">I implemented an authentication system and full
+                    CRUD operations on a replica of the Alfin Banco website, applying modular architecture,
+                    route protection with guards, form validation, and state management.</h3>
+                <div class="botones">
+                    <button class="code"><a href="https://github.com/ArianaEyes/Pagina-AlfinBanco"
+                            target="_blank">Code</a></button>
+                    <button class="go"><a href="https://pagina-alfin-banco-tfwh.vercel.app/prestamos" target="_blank">Go
+                            to Page</a></button>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="up-2">
+            <a [routerLink]="[]" fragment="skills" routerLinkActive="active"
                 style="display: flex; justify-content: center; margin-top: 2.5vh;">
-                    <img src="/icons/up.png" alt="" style="width: 50px;">
-                </a>
-            </div>
-            <div class="containers-projects reveal">
-                <img src="/icons/proyecto-java-paginas.png" alt="">
-                <div class="project-sentence">
-                    <h3 style="color: white;">JavaFX desktop task inventory application connected to SQL Server, 
-                        implementing CRUD operations through JDBC, with layered architecture, data persistence, 
-                        input validation, and interactive user interface components.</h3>
-                    <div class="botones">
-                        <button class="code"><a href="https://github.com/ArianaEyes/java-tareas" target="_blank">Code</a></button>
-                    </div>
-
+                <img src="/icons/up.png" alt="" style="width: 50px;">
+            </a>
+        </div>
+        <div class="containers-projects reveal">
+            <img src="/icons/proyecto-java-paginas.png" alt="">
+            <div class="project-sentence">
+                <h3 style="color: white;">JavaFX desktop task inventory application connected to SQL Server,
+                    implementing CRUD operations through JDBC, with layered architecture, data persistence,
+                    input validation, and interactive user interface components.</h3>
+                <div class="botones">
+                    <button class="code"><a href="https://github.com/ArianaEyes/java-tareas"
+                            target="_blank">Code</a></button>
                 </div>
-            </div>
-            <div class="containers-projects reveal">
-                <img src="/icons/portafolio-pagina.png" alt="">
-                <div class="project-sentence">
-                    <h3 style="color: white;">Personal portfolio website developed to showcase projects and technical skills, 
-                        focusing on responsive design, component-based architecture, and optimized deployment.</h3>
-                    
-                        <div class="botones">
-                            <button class="code"><a href="https://github.com/ArianaEyes/portfolio" target="_blank">Code</a></button>
-                    <button class="go"><a href="https://portafolio-ecru-chi-55.vercel.app/portfolio" target="_blank">Go to page</a></button>
-                        </div>
 
-                </div>
             </div>
         </div>
-        
-        <div class="contact" id="contact">
-            <h1 class="reveal contactme">Contact me if you are interested in my services</h1>
-            <div class="cont-contact1">
-                <h3 class="reveal title-contact">Email:</h3> 
-                <h3 class="reveal subtitle-contact">61152185@mail.isil.pe</h3>
+        <div class="containers-projects reveal">
+            <img src="/icons/portafolio-pagina.png" alt="">
+            <div class="project-sentence">
+                <h3 style="color: white;">Personal portfolio website developed to showcase projects and technical
+                    skills,
+                    focusing on responsive design, component-based architecture, and optimized deployment.</h3>
+
+                <div class="botones">
+                    <button class="code"><a href="https://github.com/ArianaEyes/portfolio"
+                            target="_blank">Code</a></button>
+                    <button class="go"><a href="https://portafolio-ecru-chi-55.vercel.app/portfolio" target="_blank">Go
+                            to page</a></button>
+                </div>
+
             </div>
-            <div class="cont-contact2">
-                <h3 class="reveal title-contact">Phone:</h3> 
-                <h3 class="reveal subtitle-contact">+51 919 586 428</h3>
-            </div>
-            <div class="up reveal">
-                <a [routerLink]="[]" fragment="projects" routerLinkActive="active"
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <h1 class="reveal contactme">Contact me if you are interested in my services</h1>
+        <div class="cont-contact1">
+            <h3 class="reveal title-contact">Email:</h3>
+            <h3 class="reveal subtitle-contact">61152185@mail.isil.pe</h3>
+        </div>
+        <div class="cont-contact2">
+            <h3 class="reveal title-contact">Phone:</h3>
+            <h3 class="reveal subtitle-contact">+51 919 586 428</h3>
+        </div>
+        <div class="up reveal">
+            <a [routerLink]="[]" fragment="projects" routerLinkActive="active"
                 style="display: flex; justify-content: center; margin-top: 2.5vh;">
-                    <img src="/icons/up.png" alt="" style="width: 50px;">
-                </a>
-            </div>
+                <img src="/icons/up.png" alt="" style="width: 50px;">
+            </a>
         </div>
+    </div>
 </div>
