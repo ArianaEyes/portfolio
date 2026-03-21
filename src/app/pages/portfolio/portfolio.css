@@ -559,7 +559,7 @@ a{
 .contact{
     z-index: 100;
     width: 100%;
-    height: 577px;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     margin-top: auto;
@@ -576,11 +576,13 @@ a{
 }
 .cont-contact1{
     width: 40%; 
+    padding: 3vh 0;
     margin-left: 12vw; 
     font-family: 'Inter', 
     sans-serif;
 }
 .cont-contact2{
+    padding: 3vh 0;
     width: 30%; 
     font-family: 'Inter', sans-serif;
 }
@@ -595,6 +597,7 @@ a{
 .up{
     width: 10vh;
     height: 10vh;
+    margin: auto 0;
     border-radius: 100%;
     background-color: #153855;
     transition-duration: 0.3s;
@@ -622,6 +625,46 @@ a{
     border-radius: 100%;
     background-color: #dde33f5f;
     transition-duration: 0.3s;
+}
+.container-form-contact{
+    margin: 5vh 0;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 2px;
+    padding: 2vh;
+}
+.form-contact{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.input-contact{
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 1vh 2vh;
+    width: 100%;
+    margin: 1vh 0;
+    background-color: white;
+    outline: none;
+}
+.form-contact textarea{
+    height: 20vh;
+}
+.container-form-contact button{
+    border: none;
+    background-color: #DDE33F; 
+    color:black;
+    width: 20%;
+    margin-top: 2vh;
+    padding: 1vh 2vh;
+    border-radius: 10px;
+    font-weight: 600;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 1.2em;
+    
 }
 /* COPOS DE NIEVE */
 .snow-container {
